@@ -1,0 +1,135 @@
+@import _vars.sass
+    
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Montserrat", "Arial", sans-serif
+    font-size: 16px
+    font-weight: 500
+    color: $textDark
+
+html, body
+    height: 100%
+
+a
+    text-decoration: none
+
+ul
+    list-style-type: none
+
+.wrapper
+    display: flex
+    flex-direction: column
+    height: 100%
+
+.content
+    flex: 1 0 auto
+
+.center
+    padding-left: calc(50% - 1200px / 2)
+    padding-right: calc(50% - 1200px / 2)
+
+.header
+    &__top
+        height: 104px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid rgba(51, 51, 51, .1)
+    &__text
+        font-weight: 400
+        font-size: 14px
+        line-height: 20px
+        opacity: .7
+    &__contact
+        height: 100%
+        display: flex
+        align-items: center
+    &__phone
+        font-weight: 600
+        margin-right: 42px
+        opacity: .7
+    &__button
+        display: flex
+        align-items: center
+        color: $colorDefault
+        padding: 16px 28px
+        border: 1px solid $colorDefault
+        border-radius: 50px
+        transition: all .3s
+        & > svg
+            margin-right: 10px
+        &:hover
+            background-color: $colorDark
+            border-color: $colorDark
+            color: #fff
+            & > svg > path
+                stroke: #fff
+    &__bottom
+        height: 80px
+        display: flex
+        align-items: center
+    &__nav
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item
+        text-transform: uppercase
+        font-size: 14px
+        line-height: 17px
+        &-select
+            display: flex
+            align-items: center
+            & > img
+                margin-left: 4px
+
+.top
+    height: 716px
+    background-image: url("../img/bg-top.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 170px
+    &__heading
+        font-size: 68px
+        line-height: 75px
+        font-weight: 700
+        color: $textWhite
+        width: 780px
+        margin-bottom: 28px
+    &__text
+        font-weight: 400
+        font-size: 16px
+        line-height: 22px
+        color: $textWhite
+        width: 690px
+        margin-bottom: 52px
+    &__btns
+    &__button
+        display: inline-block
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        padding: 20px 40px
+        border-radius: 50px
+        &_orange
+            background-color: $colorDefault
+            border: 1px solid $colorDefault
+            color: $textWhite
+            transition: all .3s
+            margin-right: 32px
+            &:hover
+                background-color: $colorDark
+                border-color: $colorDark
+        &_white
+            background-color: $colorTransparent
+            border: 1px solid $textWhite
+            color: $textWhite
+            transition: all .3s
+            &:hover
+                background-color: $colorDark
+                border-color: $colorDark
+
+.footer
+    flex: 0 0 auto
