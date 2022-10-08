@@ -170,6 +170,189 @@ ul
                 background-color: $orangeDark
                 border-color: $orangeDark
 
+.packages
+    padding-top: 120px
+    &__title
+        font-weight: 700
+        font-size: 38px
+        line-height: 46px
+        margin-bottom: 60px
+        &_orange
+            color: $orange
+    &__box
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 360px
+        height: 487px
+        padding: 40px 32px 0
+        background-repeat: no-repeat
+        background-size: cover
+        &_1
+            background-image: url("../img/package-1.png")
+        &_2
+            background-image: url("../img/package-2.png")
+        &_3
+            background-image: url("../img/package-3.png")
+    &__heading
+        padding-bottom: 28px
+        margin-bottom: 20px
+        border-bottom: 1px solid rgba(255, 255, 255, .2)
+        font-weight: 700
+        font-size: 18px
+        line-height: 25px
+        color: $white
+    &__text
+        font-size: 16px
+        line-height: 22px
+        color: $white
+        &_border
+            padding-bottom: 20px
+            border-bottom: 1px solid rgba(255, 255, 255, .2)
+        &_bold
+            font-weight: 700
+    &__description
+        width: 279px
+        height: 80px
+        font-size: 14px
+        line-height: 20px
+        color: $white
+        opacity: .5
+        margin-top: 20px
+        margin-bottom: 28px
+    &__button
+        display: block
+        text-align: center
+        border: 1px solid $orange
+        border-radius: 50px
+        padding: 16px 28px
+        color: $orange
+        margin-top: 36px
+        transition: all .3s
+        &:hover
+            border-color: $orangeDark
+            background-color: $orangeDark
+            color: $white
+
+.advantages
+    padding-top: 121px
+    padding-bottom: 135px
+    &__title
+        font-weight: 700
+        font-size: 38px
+        line-height: 46px
+        margin-bottom: 75px
+    &__box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-row-gap: 70px
+        grid-column-gap: 108px
+        text-align: center
+    &__text
+        margin-top: 22px
+        line-height: 22px
+
+.solutions
+    background-color: $bgLight
+    padding-top: 120px
+    padding-bottom: 116px
+    &__title
+        font-weight: 700
+        font-size: 38px
+        line-height: 46px
+        margin-bottom: 61px
+    &__box
+        display: grid
+        grid-template-columns: repeat(3, 360px)
+        grid-row-gap: 39px
+        justify-content: space-between
+    &__item
+        border: 1px solid rgba(51, 51, 51, .3)
+    &__top
+        height: 118px
+        background-repeat: no-repeat
+        background-size: cover
+        &_1
+            background-image: url("../img/solutions-1.png")
+        &_2
+            background-image: url("../img/solutions-2.png")
+        &_3
+            background-image: url("../img/solutions-3.png")
+        &_4
+            background-image: url("../img/solutions-4.png")
+        &_5
+            background-image: url("../img/solutions-5.png")
+        &_6
+            background-image: url("../img/solutions-6.png")
+    &__heading
+        display: block
+        margin: 34px auto 20px
+        text-align: center
+        font-weight: 700
+        font-size: 18px
+        line-height: 25px
+        text-transform: uppercase
+        width: 300px
+        height: 50px
+    &__text
+        display: block
+        width: 312px
+        height: 100px
+        margin: 0 auto
+        padding-bottom: 20px
+        text-align: center
+        font-size: 14px
+        line-height: 20px
+        opacity: .5
+        border-bottom: 1px solid rgba(51, 51, 51, .2)
+    &__cost
+        display: flex
+        align-items: center
+        margin: 24px 0 10px 24px
+    &__price
+        font-size: 14px
+        line-height: 20px
+        margin-left: 15px
+        &_orange
+            color: $orange
+            font-weight: 700
+            font-size: 18px
+            line-height: 20px
+    &__discount
+        display: flex
+        align-items: start
+        margin: 0 0 35px 24px
+        height: 61px
+        & > img
+            margin-right: 12px
+    &__old-price
+        font-weight: 700
+        font-size: 18px
+        line-height: 22px
+        text-decoration: line-through
+        opacity: .5
+    &__super
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: -0.4px
+    &__details
+        position: relative
+        display: block
+        color: $orange
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        float: right
+        margin-right: 60px
+        margin-bottom: 20px
+        transition: transform .2s
+        &:hover
+            transform: scale(1.05)
+        & > img
+            position: absolute
+            top: 4px
+            right: -35px
+
 .footer
     flex: 0 0 auto
     background-color: $gray
