@@ -128,7 +128,10 @@
                 </li>
                 <li>
                   <a class="header__item" href="#">
-                    <div class="header__search"></div>
+                    <div id="search" class="header__search"></div>
+                    <div id="input" class="input__search">
+                      <input type="text" placeholder="Поиск по сайту" />
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -178,13 +181,16 @@
                   alt="logo"
                 />
               </a>
-              <a href="#">
+              <a id="search-mini" href="#">
                 <img
                   class="nav-mini__search"
                   src="img/search.svg"
                   alt="search"
                 />
               </a>
+              <div id="input-mini" class="input__search">
+                <input type="text" placeholder="Поиск по сайту" />
+              </div>
 
               <div id="mini" class="nav-mini__block">
                 <a id="close" href="#">
@@ -407,7 +413,9 @@
         </div>
 
         <div class="solutions">
-          <p class="solutions__title">Лучшие решения для увеличения продаж</p>
+          <p class="solutions__title center">
+            Лучшие решения для увеличения продаж
+          </p>
           <div class="solutions__box">
             <div class="solutions__item">
               <div class="solutions__top solutions__top_1"></div>
@@ -654,9 +662,16 @@
 
         <div class="footer__bottom">
           <p class="footer__end">© 2008-2022 Компания «ДОМ САЙТОВ»</p>
-          <p>
-            <a class="footer__end footer__hidden" href="#">Карта сайта</a>
-            <span class="footer__end footer__hidden"> | </span>
+          <p style="display: flex">
+            <a
+              class="footer__end footer__hidden"
+              style="margin-right: 4px"
+              href="#"
+              >Карта сайта</a
+            >
+            <span class="footer__end footer__hidden" style="margin-right: 4px">
+              |
+            </span>
             <a class="footer__end footer__hidden" href="#"
               >Политика конфиденциальности</a
             >
