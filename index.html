@@ -31,7 +31,7 @@
               <a class="header__phone" href="tel:+74872792910"
                 >+7 (4872) 79-29-10</a
               >
-              <a class="header__button" href="#">
+              <a class="header__button header__button_hidden" href="#">
                 <svg
                   width="20"
                   height="20"
@@ -52,61 +52,225 @@
             </div>
           </div>
 
-          <nav class="header__bottom center">
-            <ul class="header__nav">
-              <li>
-                <a class="header__item header__item-select" href="#"
-                  >Увеличение продаж
-                  <img src="img/arrow.svg" alt="arrow" />
+          <div class="header__middle center">
+            <a class="header__button" href="#">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18.3334 14.1V16.6C18.3344 16.8321 18.2868 17.0618 18.1939 17.2745C18.1009 17.4871 17.9645 17.678 17.7935 17.8349C17.6225 17.9918 17.4206 18.1112 17.2007 18.1856C16.9809 18.2599 16.7479 18.2876 16.5168 18.2667C13.9525 17.988 11.4893 17.1118 9.32511 15.7083C7.31163 14.4289 5.60455 12.7218 4.32511 10.7083C2.91676 8.53433 2.04031 6.05916 1.76677 3.48333C1.74595 3.25288 1.77334 3.02063 1.84719 2.80135C1.92105 2.58207 2.03975 2.38057 2.19575 2.20968C2.35174 2.03879 2.54161 1.90225 2.75327 1.80876C2.96492 1.71527 3.19372 1.66688 3.42511 1.66666H5.92511C6.32953 1.66268 6.7216 1.80589 7.02824 2.0696C7.33488 2.33332 7.53517 2.69953 7.59177 3.09999C7.69729 3.90005 7.89298 4.6856 8.17511 5.44166C8.28723 5.73993 8.31149 6.06409 8.24503 6.37573C8.17857 6.68737 8.02416 6.97342 7.80011 7.2L6.74177 8.25833C7.92807 10.3446 9.65549 12.072 11.7418 13.2583L12.8001 12.2C13.0267 11.9759 13.3127 11.8215 13.6244 11.7551C13.936 11.6886 14.2602 11.7129 14.5584 11.825C15.3145 12.1071 16.1001 12.3028 16.9001 12.4083C17.3049 12.4654 17.6746 12.6693 17.9389 12.9812C18.2032 13.2931 18.3436 13.6913 18.3334 14.1Z"
+                  stroke="#FF5900"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Заказать звонок
+            </a>
+          </div>
+
+          <div class="header__bottom center">
+            <nav>
+              <ul class="header__nav">
+                <li style="height: 100%">
+                  <a class="header__item header__item-select" href="#"
+                    >Увеличение продаж
+                    <img src="img/arrow.svg" alt="arrow" />
+                  </a>
+                  <ul class="dropdown">
+                    <li>
+                      <a class="dropdown__item" href="#"
+                        >Пункт 1
+                        <img
+                          class="dropdown__img"
+                          src="img/hit.svg"
+                          alt="hit"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown__item" href="#"
+                        >SEO продвижение сайтов в Яндекс</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown__item" href="#"
+                        >Проведение бизнеса в социальных сетях</a
+                      >
+                    </li>
+                    <li><a class="dropdown__item" href="#">Пункт 4</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="header__item" href="#">Создание сайтов</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">Поддержка</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">Битрикс 24</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">О компании</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">Отзывы</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">Кейсы</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">Контакты</a>
+                </li>
+                <li>
+                  <a class="header__item" href="#">
+                    <div class="header__search"></div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="nav-mini">
+              <a id="menu" href="#">
+                <?xml version="1.0" standalone="no"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+                <svg
+                  class="nav-mini__menu"
+                  version="1.0"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 512.000000 512.000000"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <g
+                    class="nav-mini__menu_orange"
+                    transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                    fill="#000000"
+                    stroke="none"
+                  >
+                    <path
+                      d="M392 4140 c-48 -30 -72 -75 -72 -140 0 -65 24 -110 72 -140 33 -20
+55 -20 2168 -20 2113 0 2135 0 2168 20 48 30 72 75 72 140 0 65 -24 110 -72
+140 -33 20 -55 20 -2168 20 -2113 0 -2135 0 -2168 -20z"
+                    />
+                    <path
+                      d="M392 2700 c-48 -30 -72 -75 -72 -140 0 -65 24 -110 72 -140 33 -20
+55 -20 1848 -20 1793 0 1815 0 1848 20 48 30 72 75 72 140 0 65 -24 110 -72
+140 -33 20 -55 20 -1848 20 -1793 0 -1815 0 -1848 -20z"
+                    />
+                    <path
+                      d="M392 1260 c-48 -30 -72 -75 -72 -140 0 -65 24 -110 72 -140 32 -20
+53 -20 1128 -20 1075 0 1096 0 1128 20 48 30 72 75 72 140 0 65 -24 110 -72
+140 -32 20 -53 20 -1128 20 -1075 0 -1096 0 -1128 -20z"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#">
+                <img
+                  class="nav-mini__logo"
+                  src="img/logo-header.png"
+                  alt="logo"
+                />
+              </a>
+              <a href="#">
+                <img
+                  class="nav-mini__search"
+                  src="img/search.svg"
+                  alt="search"
+                />
+              </a>
+
+              <div id="mini" class="nav-mini__block">
+                <a id="close" href="#">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg
+                    class="close"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 50 50"
+                    width="24px"
+                    height="24px"
+                  >
+                    <g class="close_orange" id="surface3742928" fill="#000">
+                      <path
+                        style="
+                          stroke: none;
+                          fill-rule: nonzero;
+                          fill-opacity: 1;
+                        "
+                        d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z M 7.71875 6.28125 "
+                      />
+                    </g>
+                  </svg>
                 </a>
-                <ul class="dropdown">
-                  <li>
-                    <a class="dropdown__item" href="#"
-                      >Пункт 1
-                      <img class="dropdown__img" src="img/hit.svg" alt="hit" />
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown__item" href="#"
-                      >SEO продвижение сайтов в Яндекс</a
+                <ul class="nav-mini__list">
+                  <li class="dropdown-mini">
+                    <a class="nav-mini__item dropdown-mini__heading" href="#"
+                      >Увеличение продаж</a
                     >
+                    <ul class="dropdown-mini__list">
+                      <li>
+                        <a class="dropdown-mini__item" href="#"
+                          >Пункт 1
+                          <img
+                            class="dropdown-mini__img"
+                            src="img/hit.svg"
+                            alt="hit"
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-mini__item" href="#"
+                          >SEO продвижение сайтов в Яндекс</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-mini__item" href="#"
+                          >Проведение бизнеса в социальных сетях</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-mini__item" href="#">Пункт 4</a>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a class="dropdown__item" href="#"
-                      >Проведение бизнеса в социальных сетях</a
-                    >
-                  </li>
-                  <li><a class="dropdown__item" href="#">Пункт 4</a></li>
+
+                  <div>
+                    <li>
+                      <a class="nav-mini__item" href="#">Создание сайтов</a>
+                    </li>
+                    <li>
+                      <a class="nav-mini__item" href="#">Поддержка</a>
+                    </li>
+                    <li>
+                      <a class="nav-mini__item" href="#">Битрикс 24</a>
+                    </li>
+                  </div>
+
+                  <div>
+                    <li>
+                      <a class="nav-mini__item" href="#">О компании</a>
+                    </li>
+                    <li>
+                      <a class="nav-mini__item" href="#">Отзывы</a>
+                    </li>
+                    <li>
+                      <a class="nav-mini__item" href="#">Кейсы</a>
+                    </li>
+                    <li>
+                      <a class="nav-mini__item" href="#">Контакты</a>
+                    </li>
+                  </div>
                 </ul>
-              </li>
-              <li>
-                <a class="header__item" href="#">Создание сайтов</a>
-              </li>
-              <li>
-                <a class="header__item" href="#">Поддержка</a>
-              </li>
-              <li>
-                <a class="header__item" href="#">Битрикс 24</a>
-              </li>
-              <li>
-                <a class="header__item" href="#">О компании</a>
-              </li>
-              <li>
-                <a class="header__item" href="#">Отзывы</a>
-              </li>
-              <li>
-                <a class="header__item" href="#">Кейсы</a>
-              </li>
-              <li>
-                <a class="header__item" href="#">Контакты</a>
-              </li>
-              <li>
-                <a class="header__item" href="#"
-                  ><img src="img/search.svg" alt="search"
-                /></a>
-              </li>
-            </ul>
-          </nav>
+              </div>
+            </nav>
+          </div>
         </header>
 
         <div class="top center">
@@ -115,7 +279,7 @@
             Мы помогаем бизнесу находить клиентов быстрее, интегрируя
             маркетинговые, обучающие и технологические продукты
           </p>
-          <div>
+          <div class="top__btns">
             <a href="#" class="top__button top__button_orange"
               >Заказать увеличение продаж</a
             ><a href="#" class="top__button top__button_white"
@@ -124,8 +288,8 @@
           </div>
         </div>
 
-        <div class="packages center">
-          <p class="packages__title">
+        <div class="packages">
+          <p class="packages__title center">
             <span class="packages__title packages__title_orange"
               >Антикризисные</span
             >
@@ -134,14 +298,16 @@
           <div class="packages__box">
             <div class="packages__item packages__item_1">
               <p class="packages__heading">СТАБИЛЬНАЯ ЛИДОГЕНЕРАЦИЯ В КРИЗИС</p>
-              <p class="packages__text packages__text_border">
-                SEO-продвижение +<br />Контекстная реклама
-              </p>
-              <p class="packages__description">
-                Ищете сплит каналов для стабильного лидгена?<br />Нет ничего
-                надежнее классики!
-              </p>
+              <div class="packages__border"></div>
               <p class="packages__text">
+                SEO-продвижение + Контекстная реклама
+              </p>
+              <div class="packages__border"></div>
+              <p class="packages__description">
+                Ищете сплит каналов для стабильного лидгена? Нет ничего надежнее
+                классики!
+              </p>
+              <p class="packages__text packages__text_bottom">
                 Специальная скидка до
                 <b class="packages__text packages__text_bold">40%</b><br />на
                 каждую услугу в пакете
@@ -150,15 +316,19 @@
             </div>
 
             <div class="packages__item packages__item_2">
-              <p class="packages__heading">УСИЛЕНИЕ ЛИДОГЕНЕРАЦИИ В КРИЗИС</p>
-              <p class="packages__text packages__text_border">
-                SEO-продвижение +<br />Управление репутацией
+              <p class="packages__heading packages__heading_2">
+                УСИЛЕНИЕ ЛИДОГЕНЕРАЦИИ В КРИЗИС
               </p>
+              <div class="packages__border"></div>
+              <p class="packages__text packages__text_border">
+                SEO-продвижение + Управление репутацией
+              </p>
+              <div class="packages__border"></div>
               <p class="packages__description">
                 Добавьте к классическому продвижению работу с профильными
                 площадками и отзовиками.
               </p>
-              <p class="packages__text">
+              <p class="packages__text packages__text_bottom">
                 Специальная скидка до
                 <b class="packages__text packages__text_bold">40%</b><br />на
                 каждую услугу в пакете
@@ -167,15 +337,19 @@
             </div>
 
             <div class="packages__item packages__item_3">
-              <p class="packages__heading">АНТИБЛОКИРОВКА В СОЦСЕТЯХ</p>
+              <p class="packages__heading packages__heading_3">
+                АНТИБЛОКИРОВКА В СОЦСЕТЯХ
+              </p>
+              <div class="packages__border"></div>
               <p class="packages__text packages__text_border">
-                SEO-продвижение +<br />Таргет + Маркетплейсы
+                SEO-продвижение + Таргет + Маркетплейсы
               </p>
+              <div class="packages__border"></div>
               <p class="packages__description">
-                Основные каналы лидгена попали под блокировку?<br />У нас уже
-                есть работающее решение.
+                Основные каналы лидгена попали под блокировку? У нас уже есть
+                работающее решение.
               </p>
-              <p class="packages__text">
+              <p class="packages__text packages__text_bottom">
                 Специальная скидка до
                 <b class="packages__text packages__text_bold">20%</b><br />на
                 каждую услугу в пакете
@@ -232,7 +406,7 @@
           </div>
         </div>
 
-        <div class="solutions center">
+        <div class="solutions">
           <p class="solutions__title">Лучшие решения для увеличения продаж</p>
           <div class="solutions__box">
             <div class="solutions__item">
@@ -404,7 +578,7 @@
 
       <footer class="footer center">
         <div class="footer__top">
-          <div class="footer__item">
+          <div class="footer__item footer__item_1">
             <img class="footer__logo" src="img/logo-footer.png" alt="logo" />
             <div style="display: flex">
               <p class="footer__text footer__text_transparent">Ваш регион:</p>
@@ -423,7 +597,7 @@
             </div>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item footer__item_2">
             <p class="footer__heading">УВЕЛИЧЕНИЕ ПРОДАЖ ДЛЯ ВАШЕГО БИЗНЕСА</p>
             <ul>
               <li><a href="#" class="footer__text">SEO</a></li>
@@ -445,7 +619,7 @@
             </ul>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item footer__item_3">
             <p class="footer__heading">РАЗРАБОТКА<br />И ПОДДЕРЖКА САЙТОВ</p>
             <ul>
               <li><a href="#" class="footer__text">Разработка</a></li>
@@ -460,7 +634,7 @@
             </ul>
           </div>
 
-          <div class="footer__item">
+          <div class="footer__item footer__item_4">
             <p class="footer__heading">КОМПАНИЯ «ДОМ САЙТОВ»</p>
             <ul>
               <li><a href="#" class="footer__text">Клиенты и отзывы</a></li>
@@ -481,12 +655,18 @@
         <div class="footer__bottom">
           <p class="footer__end">© 2008-2022 Компания «ДОМ САЙТОВ»</p>
           <p>
-            <a class="footer__end" href="#">Карта сайта</a>
-            <span class="footer__end"> | </span>
-            <a class="footer__end" href="#">Политика конфиденциальности</a>
+            <a class="footer__end footer__hidden" href="#">Карта сайта</a>
+            <span class="footer__end footer__hidden"> | </span>
+            <a class="footer__end footer__hidden" href="#"
+              >Политика конфиденциальности</a
+            >
           </p>
+          <a class="footer-mini__end" href="#">Карта сайта</a>
+          <a class="footer-mini__end" href="#">Политика конфиденциальности</a>
         </div>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
