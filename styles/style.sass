@@ -175,9 +175,7 @@ input, input:focus
         padding: 40px
         padding-top: 70px
         position: absolute
-        top: 79px
-        opacity: 0
-        visibility: hidden
+        top: 82px
         background-color: $white
         width: 100%
         border-top: 1px solid $border
@@ -543,6 +541,18 @@ input, input:focus
 
     .nav-mini
         display: flex
+        &__block
+            top: 79px
+
+    .input
+        &__search
+            opacity: 1
+            visibility: visible
+
+    .item
+        opacity: 0
+        visibility: hidden
+        transition: opacity .3s
 
     .top
         height: 660px
@@ -616,6 +626,10 @@ input, input:focus
         &__middle
             display: flex
 
+    .input
+        &__search
+            top: 79px
+
     .top
         margin-top: 212px
         &__button
@@ -661,6 +675,14 @@ input, input:focus
 
     .close
         top: 40px
+
+    .input
+        &__search
+            width: 100%
+            right: 0
+            padding-right: 32px
+            & > input
+                width: 100%
 
     .nav-mini
         &__logo

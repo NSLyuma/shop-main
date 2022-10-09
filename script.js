@@ -1,17 +1,15 @@
-const menuBtn = document.getElementById("menu");
 const closeBtn = document.getElementById("close");
-const mini = document.getElementById("mini");
-
+const mini = document.getElementById("item1");
 const search = document.getElementById("search");
-const searchMini = document.getElementById("search-mini");
 const input = document.getElementById("input");
-const inputMini = document.getElementById("input-mini");
-
 let counter = 0;
 
 const hideBlock = (el) => {
   el.style.opacity = 0;
   counter = 0;
+  setTimeout(() => {
+    el.style.visibility = "hidden";
+  }, 300);
 };
 
 const showBlock = (el) => {
@@ -19,63 +17,41 @@ const showBlock = (el) => {
   counter = 1;
 };
 
-const switchBlocks = (el, block, opacity) => {
-  el.addEventListener("click", () => {
-    if (counter === 0) {
-      showBlock(block);
-      block.style.opacity = opacity;
-    } else {
-      hideBlock(block);
-      setTimeout(() => {
-        block.style.visibility = "hidden";
-      }, 300);
-    }
-  });
-};
-
-switchBlocks(menuBtn, mini, 1);
-switchBlocks(search, input, ".8");
-switchBlocks(searchMini, inputMini, ".8");
-
-// menuBtn.addEventListener("click", () => {
-//   if (counter === 0) {
-//     showBlock(mini);
-//     mini.style.opacity = 1;
-//   } else {
-//     hideBlock(mini);
-//     setTimeout(() => {
-//       mini.style.visibility = "hidden";
-//     }, 300);
-//   }
-// });
+search.addEventListener("click", () => {
+  if (counter === 0) {
+    showBlock(input);
+    input.style.opacity = ".8";
+  } else {
+    hideBlock(input);
+  }
+});
 
 closeBtn.addEventListener("click", () => {
   hideBlock(mini);
   setTimeout(() => {
-    mini.style.visibility = "hidden";
-  }, 300);
+    mini.hidden = true;
+  }, 400);
 });
 
-// search.addEventListener("click", () => {
-//   if (counter === 0) {
-//     showBlock(input);
-//     input.style.opacity = ".8";
-//   } else {
-//     hideBlock(input);
-//     setTimeout(() => {
-//       input.style.visibility = "hidden";
-//     }, 300);
-//   }
-// });
+const openbox = (id, opacity) => {
+  let el = document.getElementById("item" + id);
 
-// searchMini.addEventListener("click", () => {
-//   if (counter === 0) {
-//     showBlock(inputMini);
-//     inputMini.style.opacity = ".8";
-//   } else {
-//     hideBlock(inputMini);
-//     setTimeout(() => {
-//       inputMini.style.visibility = "hidden";
-//     }, 300);
-//   }
-// });
+  if (el.hidden) {
+    document.querySelectorAll(".item").forEach((item) => {
+      item.hidden = true;
+      item.style.visibility = "hidden";
+      item.style.opacity = 0;
+    });
+    el.hidden = false;
+    el.style.visibility = "visible";
+    setTimeout(() => {
+      el.style.opacity = opacity;
+    });
+  } else {
+    setTimeout(() => {
+      el.hidden = true;
+      el.style.visibility = "hidden";
+    }, 400);
+    el.style.opacity = 0;
+  }
+};

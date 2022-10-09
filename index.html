@@ -138,7 +138,7 @@
             </nav>
 
             <nav class="nav-mini">
-              <a id="menu" href="#">
+              <a id="menu" onclick="openbox(1, 1)" href="#">
                 <?xml version="1.0" standalone="no"?>
                 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
                 <svg
@@ -181,18 +181,18 @@
                   alt="logo"
                 />
               </a>
-              <a id="search-mini" href="#">
+              <a id="search-mini" onclick="openbox(2, '.8')" href="#">
                 <img
                   class="nav-mini__search"
                   src="img/search.svg"
                   alt="search"
                 />
               </a>
-              <div id="input-mini" class="input__search">
+              <div id="item2" class="item input__search" hidden>
                 <input type="text" placeholder="Поиск по сайту" />
               </div>
 
-              <div id="mini" class="nav-mini__block">
+              <div id="item1" class="item nav-mini__block" hidden>
                 <a id="close" href="#">
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg
